@@ -136,6 +136,7 @@ button:hover,
 }
 .slider{
   width: -webkit-fill-available;
+ width: -moz-available;
 }
 .timescore{
   display: contents;
