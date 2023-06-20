@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Word Scramble Game By Chintamani</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- my css file  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <marquee style="color: #9c9388a1" direction="left" scrollamount="3"
+        >Created By
+        <b
+          ><a
+            style="text-decoration: none; color: aqua"
+            href="https://github.com/chintamani-pala/"
+            >Chintamani Pala</a
+          > </b
+        ><span id="contactspan"></span
+      ></marquee>
+      <div class="selection">
+        <p id="suffeledWord" class="suffeledWord"></p>
+      </div>
+      <div class="field">
+        <input
+          name="pass"
+          id="inputBox"
+          type="text"
+          placeholder="Enter The Correct Word"
+        />
+      </div>
+      <p
+        id="result"
+        style="margin-top: 35px; color: rgba(199, 199, 15, 0.866)"
+      ></p>
+      <div class="slider"></div>
+      <div class="selection" style="margin-top: 45px">
+        <input
+          class="slider"
+          type="range"
+          min="3"
+          max="9"
+          value="3"
+          id="slider"
+        /><span style="margin-right: 125px">Easy </span
+        ><span style="margin-right: 125px">Medium</span><span>Hard</span><br />
+        <p class="timescore">Hints :</p>
+        <span><b id="hint" style="color: cadetblue"></b></span
+        ><br />
+        <p class="timescore">time :</p>
+        <span><b id="time" style="color: rgb(246, 0, 0)">30s</b></span
+        ><br />
+        <p class="timescore">Current Score :</p>
+        <span><b id="currentScore"></b></span><br />
+        <!-- <p class="timescore">Highest Score :</p>
+        <span><b id="highestScore">0</b></span
+        ><br /> -->
+      </div>
+      <button name="nextWord" onclick="getitem()" id="nextWord" style="margin-right: 10px">
+        Next
+      </button>
+    </div>
+
+    <!-- my security file  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="assets/js/security.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
