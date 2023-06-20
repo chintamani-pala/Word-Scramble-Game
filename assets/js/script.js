@@ -65,7 +65,7 @@ function mainfunc() {
     word = word.toUpperCase()
     let copyword = [...word];
     let newWord = copyword.sort().join("")
-    console.log(word)
+    
     suffeledWord.innerHTML = newWord
     nextWord.innerHTML = "Next"
     timeid = setInterval(() => {
